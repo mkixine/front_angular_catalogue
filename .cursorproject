@@ -1,0 +1,90 @@
+**Project Overview**
+
+**Kuroco Front Angular Catalogue**
+
+このプロジェクトは、物件カタログサイトのフロントエンド部分をAngularで実装したカタログシステムです。
+
+**バックエンド**
+- APIドメイン: https://dev-angular-catalogue.g.kuroco.app
+- 認証: Cookieベースの認証
+
+**エンドポイント**
+
+***認証関連***
+- `/rcms-api/1/login`: ログイン
+- `/rcms-api/1/logout`: ログアウト
+- `/rcms-api/1/profile`: ユーザー情報取得
+
+***物件管理***
+- `/rcms-api/1/property/list`: 物件一覧取得
+- `/rcms-api/1/property/details/{topics_id}`: 物件詳細取得
+- `/rcms-api/1/property/update/{topics_id}`: 物件情報更新
+- `/rcms-api/1/waiting_for_approval_list`: 承認待ち物件一覧
+- `/rcms-api/1/waiting_for_approval_details/{topics_id}`: 承認待ち物件詳細
+- `/rcms-api/1/accept/{topics_id}`: 物件承認
+- `/rcms-api/1/reject/{topics_id}`: 物件却下
+
+***お問い合わせ***
+- `/rcms-api/1/inquiry`: お問い合わせフォーム情報取得
+- `/rcms-api/1/inquiry/1`: お問い合わせ送信
+- `/rcms-api/1/inquiry/list`: お問い合わせ一覧
+- `/rcms-api/1/inquiry/details/{inquiry_bn_id}`: お問い合わせ詳細
+
+***ファイル管理***
+- `/rcms-api/1/upload`: ファイルアップロード
+
+**ページ一覧**
+- Landing(/)
+- 物件詳細(/property/{topics_id})
+- お問い合わせ(/inquiry)
+- 管理ページトップ(/admin)
+- 管理ページログイン(/admin/login)
+- 管理画面物件一覧(/admin/property/list)
+- 管理画面物件登録(/admin/property/edit})
+- 管理画面物件編集・承認(/admin/property/edit/{topics_id})
+- 管理画面お問い合わせ履歴一覧(/admin/inquiry/list)
+- 管理画面お問い合わせ履歴詳細(/admin/inquiry/details/{inquiry_bn_id})
+- 管理画面ユーザー一覧(/admin/member/list)
+- 管理画面ユーザー登録(/admin/member/edit)
+- 管理画面ユーザー編集(/admin/member/edit/{member_id})
+
+**技術スタック**
+- Angular 17+
+- TypeScript
+- SASS
+- RxJS
+
+**アーキテクチャ**
+- スタンドアロンコンポーネントベース
+- シグナルベースの状態管理
+- レイジーローディング
+- モジュール分割
+
+**開発環境**
+- Node.js
+- Angular CLI
+- Git
+- VS Code / Cursor
+
+**デプロイメント**
+- CI/CDパイプライン
+- コンテナ化
+- 環境分離（開発/ステージング/本番）
+
+**品質基準**
+- ユニットテストカバレッジ
+- E2Eテスト
+- パフォーマンス最適化
+- アクセシビリティ対応
+
+**セキュリティ要件**
+- OAuth2認証
+- XSS対策
+- CSRF対策
+- セキュアなAPI通信
+
+**パフォーマンス目標**
+- Core Web Vitals最適化
+- バンドルサイズ最適化
+- レンダリングパフォーマンス
+- キャッシュ戦略 

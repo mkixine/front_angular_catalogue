@@ -1,0 +1,47 @@
+{
+    "rules": {
+        "angular": {
+            "promptFile": ".cursorprompt",
+            "projectFile": ".cursorproject",
+            "filePatterns": [
+                "*.ts",
+                "*.html",
+                "*.scss"
+            ],
+            "conventions": {
+                "naming": "kebab-case",
+                "fileTypes": {
+                    "components": "*.component.ts",
+                    "services": "*.service.ts",
+                    "modules": "*.module.ts",
+                    "directives": "*.directive.ts",
+                    "pipes": "*.pipe.ts",
+                    "tests": "*.spec.ts"
+                }
+            },
+            "bestPractices": {
+                "typeSafety": {
+                    "useInterfaces": true,
+                    "avoidAny": true
+                },
+                "codeStructure": {
+                    "imports": "top",
+                    "order": [
+                        "imports",
+                        "class",
+                        "properties",
+                        "methods",
+                        "exports"
+                    ]
+                },
+                "features": {
+                    "useOptionalChaining": true,
+                    "useNullishCoalescing": true,
+                    "useStandaloneComponents": true,
+                    "useSignals": true,
+                    "useInjectFunction": true
+                }
+            }
+        }
+    }
+}
