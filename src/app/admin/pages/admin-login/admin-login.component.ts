@@ -3,10 +3,10 @@ import { CommonModule } from '@angular/common';
 import { RouterModule } from '@angular/router';
 
 @Component({
-  selector: 'app-landing',
+  selector: 'app-admin-login',
   standalone: true,
   imports: [CommonModule, RouterModule],
-  templateUrl: './landing.component.html',
-  styleUrls: ['./landing.component.scss'],
+  templateUrl: './admin-login.component.html',
+  styleUrls: ['./admin-login.component.scss'],
 })
-export class LandingComponent {}
+export class AdminLoginComponent {}

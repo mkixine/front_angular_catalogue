@@ -1,6 +1,6 @@
 import { Routes } from '@angular/router';
 
-export const ADMIN_ROUTES: Routes = [
+export const adminRoutes: Routes = [
   {
     path: '',
     loadComponent: () =>
@@ -22,21 +22,21 @@ export const ADMIN_ROUTES: Routes = [
         path: 'list',
         loadComponent: () =>
           import('./pages/property-list/property-list.component').then(
-            (m) => m.PropertyListComponent
+            (m) => m.AdminPropertyListComponent
           ),
       },
       {
         path: 'edit',
         loadComponent: () =>
           import('./pages/property-edit/property-edit.component').then(
-            (m) => m.PropertyEditComponent
+            (m) => m.AdminPropertyEditComponent
           ),
       },
       {
         path: 'edit/:topics_id',
         loadComponent: () =>
           import('./pages/property-edit/property-edit.component').then(
-            (m) => m.PropertyEditComponent
+            (m) => m.AdminPropertyEditComponent
           ),
       },
     ],
@@ -48,14 +48,14 @@ export const ADMIN_ROUTES: Routes = [
         path: 'list',
         loadComponent: () =>
           import('./pages/inquiry-list/inquiry-list.component').then(
-            (m) => m.InquiryListComponent
+            (m) => m.AdminInquiryListComponent
           ),
       },
       {
         path: 'details/:inquiry_bn_id',
         loadComponent: () =>
           import('./pages/inquiry-details/inquiry-details.component').then(
-            (m) => m.InquiryDetailsComponent
+            (m) => m.AdminInquiryDetailsComponent
           ),
       },
     ],
@@ -67,21 +67,21 @@ export const ADMIN_ROUTES: Routes = [
         path: 'list',
         loadComponent: () =>
           import('./pages/member-list/member-list.component').then(
-            (m) => m.MemberListComponent
+            (m) => m.AdminMemberListComponent
           ),
       },
       {
         path: 'edit',
         loadComponent: () =>
           import('./pages/member-edit/member-edit.component').then(
-            (m) => m.MemberEditComponent
+            (m) => m.AdminMemberEditComponent
           ),
       },
       {
         path: 'edit/:member_id',
         loadComponent: () =>
           import('./pages/member-edit/member-edit.component').then(
-            (m) => m.MemberEditComponent
+            (m) => m.AdminMemberEditComponent
           ),
       },
     ],

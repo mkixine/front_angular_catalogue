@@ -1,7 +1,6 @@
 import { Routes } from '@angular/router';
 
 export const routes: Routes = [
-  // フロントエンド
   {
     path: '',
     loadComponent: () =>
@@ -23,10 +22,9 @@ export const routes: Routes = [
         (m) => m.InquiryComponent
       ),
   },
-  // 管理画面
   {
     path: 'admin',
     loadChildren: () =>
-      import('./admin/admin.routes').then((m) => m.ADMIN_ROUTES),
+      import('./admin/admin.routes').then((m) => m.adminRoutes),
   },
 ];

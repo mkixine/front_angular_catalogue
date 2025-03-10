@@ -12,6 +12,8 @@
                 "naming": "kebab-case",
                 "fileTypes": {
                     "components": "*.component.ts",
+                    "templates": "*.component.html",
+                    "styles": "*.component.scss",
                     "services": "*.service.ts",
                     "modules": "*.module.ts",
                     "directives": "*.directive.ts",
@@ -40,6 +42,10 @@
                     "useStandaloneComponents": true,
                     "useSignals": true,
                     "useInjectFunction": true
+                },
+                "templates": {
+                    "separateFiles": true,
+                    "useInlineStyles": false
                 }
             }
         }

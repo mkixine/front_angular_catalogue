@@ -16,8 +16,10 @@
 - `/rcms-api/1/profile`: ユーザー情報取得
 
 ***物件管理***
-- `/rcms-api/1/property/list`: 物件一覧取得
-- `/rcms-api/1/property/details/{topics_id}`: 物件詳細取得
+- `/rcms-api/1/property/list`: 物件一覧(admin)取得
+- `/rcms-api/3/property/list`: 物件一覧(public)取得
+- `/rcms-api/1/property/details/{topics_id}`: 物件詳細(admin)取得
+- `/rcms-api/1/property/details/{topics_id}`: 物件詳細(public)取得
 - `/rcms-api/1/property/update/{topics_id}`: 物件情報更新
 - `/rcms-api/1/waiting_for_approval_list`: 承認待ち物件一覧
 - `/rcms-api/1/waiting_for_approval_details/{topics_id}`: 承認待ち物件詳細
@@ -25,8 +27,8 @@
 - `/rcms-api/1/reject/{topics_id}`: 物件却下
 
 ***お問い合わせ***
-- `/rcms-api/1/inquiry`: お問い合わせフォーム情報取得
-- `/rcms-api/1/inquiry/1`: お問い合わせ送信
+- `/rcms-api/3/inquiry`: お問い合わせフォーム情報取得
+- `/rcms-api/3/inquiry/1`: お問い合わせ送信
 - `/rcms-api/1/inquiry/list`: お問い合わせ一覧
 - `/rcms-api/1/inquiry/details/{inquiry_bn_id}`: お問い合わせ詳細
 
@@ -34,13 +36,13 @@
 - `/rcms-api/1/upload`: ファイルアップロード
 
 **ページ一覧**
-- Landing(/)
+- Top(/)
 - 物件詳細(/property/{topics_id})
 - お問い合わせ(/inquiry)
 - 管理ページトップ(/admin)
 - 管理ページログイン(/admin/login)
 - 管理画面物件一覧(/admin/property/list)
-- 管理画面物件登録(/admin/property/edit})
+- 管理画面物件登録(/admin/property/edit)
 - 管理画面物件編集・承認(/admin/property/edit/{topics_id})
 - 管理画面お問い合わせ履歴一覧(/admin/inquiry/list)
 - 管理画面お問い合わせ履歴詳細(/admin/inquiry/details/{inquiry_bn_id})
